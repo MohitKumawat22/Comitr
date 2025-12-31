@@ -252,7 +252,7 @@ opacity: 1;
 } */
  .textst{
     height: 406px;
-    width: 420px ;
+    width: 620px ;
     /* background-color: aqua; */
     /* background-image: url(/Images/Comitr.png); */
   background-repeat: no-repeat;      /* image repeat na ho */
@@ -477,5 +477,6 @@ transform: rotate(10deg);
 opacity: 1;
 
 }
+
 
 
