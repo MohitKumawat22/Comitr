@@ -251,8 +251,8 @@ opacity: 1;
   border-radius: 50px;
 } */
  .textst{
-    height: 406px;
-    width: 620px ;
+    height: 426px;
+    width: 680px ;
     /* background-color: aqua; */
     /* background-image: url(/Images/Comitr.png); */
   background-repeat: no-repeat;      /* image repeat na ho */
@@ -477,6 +477,7 @@ transform: rotate(10deg);
 opacity: 1;
 
 }
+
 
 
 
