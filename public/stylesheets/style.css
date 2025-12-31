@@ -7,6 +7,175 @@ html,body{
     height: 100%;
     width: 100%;
 }
+/* =========================================
+   MEDIA QUERIES FOR RESPONSIVENESS
+   ========================================= */
+
+/* --- Tablet and Small Laptops (Max Width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+    
+    /* Adjust Header Box spacing */
+    .headerbox h1 {
+        font-size: 40px;
+        margin-left: 40px;
+    }
+
+    .headerbox h1 span {
+        font-size: 80px;
+    }
+
+    .adbtn {
+        margin-left: 40px;
+    }
+
+    /* Adjust Navigation */
+    .navbx {
+        margin-left: auto; /* Resets the 80vh margin */
+        padding-right: 20px;
+    }
+    
+    nav div img {
+        left: 20px; /* Adjust logo position */
+    }
+
+    /* Adjust Service Grid to 2 Columns */
+    .servicediv {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+    }
+}
+
+/* --- Mobile Devices (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* 1. Navigation Bar - Stack vertically */
+    nav {
+        height: auto;
+        padding-bottom: 10px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; /* Change from fixed if content is too long */
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    nav div img {
+        position: static; /* Remove absolute positioning */
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .navbx {
+        position: static; /* Remove absolute positioning */
+        width: 100%;
+        margin-left: 0;
+        flex-wrap: wrap; /* Allow links to wrap if screen is very small */
+        justify-content: center;
+    }
+
+    .list-element {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    /* 2. Hero Section - Stack Vertically */
+    .container1 {
+        flex-direction: column;
+        height: auto;
+        overflow-x: hidden;
+        padding-bottom: 50px;
+    }
+
+    .headerbox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .headerbox h1 {
+        margin-left: 0;
+        top: 0;
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    .headerbox h1 span {
+        font-size: 60px;
+    }
+
+    .adbtn {
+        margin-left: 0;
+        top: 20px;
+    }
+
+    /* 3. The Word Grid (Senior/Junior) 
+       Using Scale to fit the complex layout on small screens */
+    .textst {
+        width: 100%;
+        /* Scale down the 680px grid to fit mobile width */
+        transform: scale(0.55); 
+        transform-origin: top center; 
+        top: 0;
+        margin-top: 20px;
+        height: 300px; /* Force reduce height because scale doesn't affect flow */
+    }
+
+    /* 4. Services Section - 1 Column */
+    .container {
+        height: auto; /* Allow growth */
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .container h1 {
+        position: static;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .servicediv {
+        width: 90%;
+        grid-template-columns: 1fr; /* Single column */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .scards, .none {
+        width: 100%; /* Full width cards */
+        margin: 10px 0;
+    }
+
+    #scarddd {
+        top: 0; /* Reset specific positioning for the middle card */
+    }
+    
+    /* Hide the 'none' spacer divs on mobile if they take up space */
+    .none {
+        display: none; 
+    }
+}
+
+/* --- Extra Small Screens (Max Width: 400px) --- */
+@media screen and (max-width: 400px) {
+    .textst {
+        transform: scale(0.45); /* Scale down even more */
+    }
+    
+    .headerbox h1 span {
+        font-size: 50px;
+    }
+}
 body{
     background-color: beige;
   color: rgb(0, 0, 0);
@@ -477,6 +646,7 @@ transform: rotate(10deg);
 opacity: 1;
 
 }
+
 
 
 
