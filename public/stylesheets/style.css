@@ -138,7 +138,7 @@ padding-left: 25px;
     right: 0px;
 }
 .container1{
-    height: 100vh;
+    height: auto;
     width: 100vw;
     /* background-color: aqua; */
     display: flex;
@@ -474,4 +474,5 @@ z-index: 1;
 .scards:hover::after{
 transform: rotate(10deg);
 opacity: 1;
+
 }
